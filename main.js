@@ -15,7 +15,7 @@ $(document).ready(function(){
 function initializeMap() {
     initialLocation = new google.maps.LatLng(39.833333,-98.58);
     var mapOptions = {
-      zoom: 5,
+      zoom: 4,
       mapTypeId: google.maps.MapTypeId.ROADMAP
     };
     _map = new google.maps.Map(document.getElementById('map_canvas'), mapOptions);
