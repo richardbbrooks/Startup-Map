@@ -79,6 +79,7 @@ p.company{
 	margin: 0;
 	padding: 0;
 	background-color: #111;
+        cursor: pointer;
 }
 #rightpanel_toggle ul li{
 	margin: 0;
@@ -151,6 +152,7 @@ p.company{
 	z-index: 500;
 	padding-left: 1em;
 	padding-right: 1em;
+	cursor: pointer;
 }
 #about_toggle:hover{
 	background-color: #777;
@@ -160,6 +162,7 @@ p.company{
 	left: 9%;
 	bottom: 0;
 	z-index: 501;
+	cursor: pointer;
 }
 #about-title:hover{
 	color: #111;
