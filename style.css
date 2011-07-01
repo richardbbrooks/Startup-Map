@@ -142,21 +142,6 @@ p.company{
 	color: #599;
 	text-align: right;
 }
-#about_toggle {
-	position: absolute;
-	left: 8%;
-	bottom: 0;
-	width: 500px;
-	height: 1em;
-	background-color: #111;
-	z-index: 500;
-	padding-left: 1em;
-	padding-right: 1em;
-	cursor: pointer;
-}
-#about_toggle:hover{
-	background-color: #777;
-}
 #about-title {
 	position: absolute;
 	left: 9%;
@@ -169,10 +154,11 @@ p.company{
 }
 #about {
 	display: none;
+	cursor: pointer;
 	position: absolute;
 	max-height: 60%;
 	min-height: 13em;
-	bottom: 1em;
+	bottom: 0;
 	margin: 0;
 	padding: 1em;
 	left: 8%;
