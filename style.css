@@ -70,6 +70,37 @@ p.company{
 	margin: 0;
 	padding: 0;
 }
+#button_bar{
+    display: block;
+    position: absolute;
+    color: white;
+    left: 0;
+    bottom: 7%;
+    z-index: 501;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+    -moz-box-shadow: 1px 1px 5px #000;
+	-webkit-box-shadow: 1px 1px 5px #000;
+	box-shadow: 0px 0px 1px rbga(0,0,0,0.2);
+	background-color:rgba(0,0,0,0.8);
+}
+#button_bar:hover{
+    background-color:rgba(0,0,0,0.7);
+}
+#button_bar ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+#button_bar ul li{
+    margin: 2px;
+    padding: 2px;
+    padding-left: 1em;
+    padding-right: 1em;
+    font-size: 16pt;
+    text-align: center;
+}
 #rightpanel_toggle{
 	position: absolute;
 	right: 0;
@@ -79,7 +110,11 @@ p.company{
 	margin: 0;
 	padding: 0;
 	background-color: #111;
-        cursor: pointer;
+    cursor: pointer;
+    -moz-box-shadow: 1px 1px 5px #000;
+	-webkit-box-shadow: 1px 1px 5px #000;
+	box-shadow: 0px 0px 3px rbga(0,0,0,0.5); 
+    z-index: 501;
 }
 #rightpanel_toggle ul li{
 	margin: 0;
@@ -101,6 +136,9 @@ p.company{
 	background-color: rgba(0,0,0,0.60);
 	border-bottom-left-radius: 20px;
 	border-top-left-radius: 20px;
+    -moz-box-shadow: 1px 1px 5px #000;
+	-webkit-box-shadow: 1px 1px 5px #000;
+	box-shadow: 0px 0px 3px rbga(0,0,0,0.5); 
 }
 #companies{
 	height: 100%;
@@ -142,16 +180,6 @@ p.company{
 	color: #599;
 	text-align: right;
 }
-#about-title {
-	position: absolute;
-	left: 9%;
-	bottom: 0;
-	z-index: 501;
-	cursor: pointer;
-}
-#about-title:hover{
-	color: #111;
-}
 #about {
 	display: none;
 	cursor: pointer;
@@ -164,15 +192,19 @@ p.company{
 	left: 8%;
 	width: 500px;
 	z-index: 500;
-	background-color:rgba(0,0,0,0.7);
+	background-color:rgba(0,0,0,0.6);
 	border-top-left-radius: 20px;
 	border-top-right-radius: 20px;
+    -moz-box-shadow: 1px 1px 5px #000;
+	-webkit-box-shadow: 1px 1px 5px #000;
+	box-shadow: 0px 0px 1px rbga(0,0,0,0.2);  
 }
 #about p{
 	font-family: 'Droid Sans', sans-serif;
 	font-size: 14px;
 	text-indent: 1em;
 	color: #fff;
+    cursor: text;
 }
 .scroll-pane{
 	overflow: auto;
