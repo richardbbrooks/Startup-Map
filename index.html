@@ -15,7 +15,6 @@
 		<meta property="og:site_name" content="Startup Map" /> 
         <meta property="fb:admins" content="" />
         <script type="text/javascript">
-
   var _gaq = _gaq || [];
   _gaq.push(['_setAccount', 'UA-24311858-1']);
   _gaq.push(['_trackPageview']);
@@ -25,26 +24,25 @@
     ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
   })();
-
         </script>
 	</head>
 	<body>
 		<div id="map_canvas"></div>
 		<div id="mainwrapper">
 			<div id="title-panel">
-				<h1><a href="#" class="title">Startup Map</a></h1>
-				<p style="text-align: center"><strong>A map of noteworthy US-based tech startups.</strong><br />Suggest a startup at <a class="email" href='&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#115;&#116;&#97;&#114;&#116;&#117;&#112;&#115;&#64;&#115;&#116;&#97;&#114;&#116;&#117;&#112;&#109;&#97;&#112;&#46;&#99;&#111;&#109;'>&#115;&#116;&#97;&#114;&#116;&#117;&#112;&#115;&#64;&#115;&#116;&#97;&#114;&#116;&#117;&#112;&#109;&#97;&#112;&#46;&#99;&#111;&#109;</a></p>
+				<h1><a href="#" class="title" onclick="_gaq.push(['_trackEvent', 'sitenav', 'click', 'header']);">Startup Map</a></h1>
+				<p style="text-align: center"><strong>A map of noteworthy US-based tech startups.</strong><br />Suggest a startup at <a class="email" href='&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#115;&#116;&#97;&#114;&#116;&#117;&#112;&#115;&#64;&#115;&#116;&#97;&#114;&#116;&#117;&#112;&#109;&#97;&#112;&#46;&#99;&#111;&#109;' onclick="_gaq.push(['_trackEvent', 'sitenav', 'click', 'email_header']);">&#115;&#116;&#97;&#114;&#116;&#117;&#112;&#115;&#64;&#115;&#116;&#97;&#114;&#116;&#117;&#112;&#109;&#97;&#112;&#46;&#99;&#111;&#109;</a></p>
 			</div>
 			<div id="button_bar">
                 <ul>
-                    <li onclick="toggleAboutPanel()">About</li>
+                    <li onclick="toggleAboutPanel(); _gaq.push(['_trackEvent', 'sitenav', 'click', 'about_toggle']);">About</li>
                 </ul>
 			</div>
 			<div id="rightpanel_toggle" onclick="toggleRightSidebar()"></div>
 			<div id="rightpanel_content" class="scroll-pane">
 				<div id="companies"></div>
 			</div>
-			<div id="about" onclick="toggleAboutPanel()" class="scroll-pane">
+			<div id="about" onclick="toggleAboutPanel(); _gaq.push(['_trackEvent', 'sitenav', 'click', 'about_hide']);" class="scroll-pane">
 				<p>
 					<strong>StartupMap.com was created to display a map of current and relevant technology startups across the US.</strong>
 				</p>
@@ -52,7 +50,7 @@
 					This map covers startups that are large enough to have received a substantial amount of notoriety in the tech community.
 				</p>
 				<p>
-					Suggestions are welcome!  Please include the company's Crunchbase name, and send to <a class="email" href='&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#115;&#116;&#97;&#114;&#116;&#117;&#112;&#115;&#64;&#115;&#116;&#97;&#114;&#116;&#117;&#112;&#109;&#97;&#112;&#46;&#99;&#111;&#109;'>&#115;&#116;&#97;&#114;&#116;&#117;&#112;&#115;&#64;&#115;&#116;&#97;&#114;&#116;&#117;&#112;&#109;&#97;&#112;&#46;&#99;&#111;&#109;</a>
+					Suggestions are welcome!  Please include the company's Crunchbase name, and send to <a class="email" href='&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#115;&#116;&#97;&#114;&#116;&#117;&#112;&#115;&#64;&#115;&#116;&#97;&#114;&#116;&#117;&#112;&#109;&#97;&#112;&#46;&#99;&#111;&#109;' onclick="_gaq.push(['_trackEvent', 'sitenav', 'click', 'email_about']);">&#115;&#116;&#97;&#114;&#116;&#117;&#112;&#115;&#64;&#115;&#116;&#97;&#114;&#116;&#117;&#112;&#109;&#97;&#112;&#46;&#99;&#111;&#109;</a>
 				</p>
 			</div>
 		</div>

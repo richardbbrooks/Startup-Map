@@ -111,14 +111,14 @@ function makePrettyInfoWindowText(company) {
 		prettyString += '<span id="employees">'+company.number_of_employees+' Employees</span>';
 	}
 	if (company.homepage_url) {
-		prettyString += '<span id="companywebsite"><a href="'+company.homepage_url+'">'+company.homepage_url+'</a></span>';
+		prettyString += '<span id="companywebsite"><a href="'+company.homepage_url+'" onclick="_gaq.push([\'_trackEvent\', \'map\', \'companyurl_click\', \''+company.permalink+'\']);">'+company.homepage_url+'</a></span>';
 	}
 	return prettyString;	
 }
 
 function makePrettyCompanyParagraph(company) {
 	var prettyString = '';
-	prettyString += '<p id="'+company.permalink+'" class="company" onclick="zoomToMarker(\''+company.permalink+'\');">';
+	prettyString += '<p id="'+company.permalink+'" class="company" onclick="zoomToMarker(\''+company.permalink+'\'); _gaq.push([\'_trackEvent\', \'sidebar\', \'company_click\', \''+company.permalink+'\']);">';
 	prettyString += '<span id="companyname">'+company.name+'</span><br />';
 	if (company.offices[0]){
 		prettyString += '<span id="companylocation">';
