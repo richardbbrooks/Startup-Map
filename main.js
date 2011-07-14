@@ -121,9 +121,12 @@ function makePrettyCompanyParagraph(company) {
 		if (company.offices[0].city){
 			prettyString += ' ' + company.offices[0].city;
 		}
-		if (company.offices[0].state_code) {
-			prettyString += ' ' + company.offices[0].state_code;
+		if (company.offices[0].state_code && company.offices[0].city) {
+			prettyString += ', ' + company.offices[0].state_code;
 		}
+        else if (company.offices[0].state_code){
+            prettyString += ' ' + company.offices[0].state_code;
+        }
 	}
 	else{
 		prettyString += '&nbsp;';
